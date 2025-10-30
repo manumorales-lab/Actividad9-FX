@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.actividad9.PrimaryController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.actividad9.PrimaryController">
    <children>
-      <Label text="hola, Gracias por ver :)." textFill="#d33131">
-         <font>
-            <Font size="32.0" />
-         </font></Label>
-      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="igualmente,(づ ◕‿◕ )づ">
-         <font>
-            <Font size="32.0" />
-         </font></Button>
+      <Label text="SISTEMA DE ACTIVIDADES TURÍSTICAS" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
+      
+      <VBox spacing="15" alignment="CENTER">
+         <Label text="Seleccione una opción:" style="-fx-font-size: 16px; -fx-text-fill: #7f8c8d;"/>
+         
+         <Button text="🎯 CRUD Actividades Turísticas" 
+                 onAction="#abrirCRUDActividades"
+                 style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 300; -fx-pref-height: 50;"/>
+         
+         <Button text="📋 Menú Secundario" 
+                 onAction="#switchToSecondary"
+                 style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 300; -fx-pref-height: 50;"/>
+      </VBox>
+      
+      <Label text="Actividad 9 - JavaFX CRUD" style="-fx-text-fill: #bdc3c7; -fx-font-style: italic;"/>
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
